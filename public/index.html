@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM TestCase Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Manual Test Case Generator</h1>
+            <p>Powered by Local Llama 3.2</p>
+        </header>
+
+        <div class="chat-container" id="chat-box">
+            <!-- Messages will appear here -->
+            <div class="message system">
+                <p>👋 Hello! Paste your code or requirements below, and I'll generate test cases for you.</p>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <textarea id="user-input"
+                placeholder="Type your code or requirement here... (Shift+Enter for new line)"></textarea>
+            <button id="send-btn">Generate Tests 🚀</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
