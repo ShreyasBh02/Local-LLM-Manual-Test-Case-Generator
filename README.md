@@ -11,13 +11,13 @@ The system follows a 3-Layer Architecture (A.N.T. Protocol) to ensure reliabilit
 
 ```mermaid
 graph TD
-    User[User Input (Requirement)] -->|HTTP POST| UI[Frontend (index.html)]
-    UI -->|JSON Payload| Server[Node.js Server (Layer 2)]
-    Server -->|Wrap with Prompt Template| Tool[Ollama Tool (Layer 3)]
-    Tool -->|API Request| Ollama[Ollama (Llama 3.2:3b)]
-    Ollama -->|Generated Text| Tool
-    Tool -->|Clean Response| Server
-    Server -->|Structured Test Cases| UI
+    User["User Input (Requirement)"] -->|"HTTP POST"| UI["Frontend (index.html)"]
+    UI -->|"JSON Payload"| Server["Node.js Server (Layer 2)"]
+    Server -->|"Wrap with Prompt Template"| Tool["Ollama Tool (Layer 3)"]
+    Tool -->|"API Request"| Ollama["Ollama (Llama 3.2:3b)"]
+    Ollama -->|"Generated Text"| Tool
+    Tool -->|"Clean Response"| Server
+    Server -->|"Structured Test Cases"| UI
 ```
 
 ### Layers:
